@@ -1,0 +1,129 @@
+/* Ваши существующие стили остаются здесь */
+
+/* Стили для шапки меню */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+/* Стили для фрагмента OUR MENU с использованием CSS Grid */
+.menu-header {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Одна колонка для текста и одна для изображения */
+  align-items: center; /* Выравнивание по вертикали по центру */
+  background-color: #333; /* Серый фон */
+  color: white;
+  padding: 0 0 0 160px;
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around; /* Размещение текста и изображения по краям */
+  align-items: flex-end; /* Выравнивание изображения к нижнему краю */
+  width: 100%;
+}
+
+.text {
+  flex: 1; /* Текст занимает левую треть контейнера */
+  padding-left: 20px; /* Отступ слева для текста */
+}
+
+.menu-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.menu-header p {
+  font-size: 18px;
+}
+
+.menu-header img {
+  max-height: 200px; /* Увеличение высоты изображения в 2 раза */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+/* Стили для навигации */
+nav {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+ul li a:hover {
+  color: orange;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu {
+  max-width: 800px;
+  margin: 0 auto; /* Центрирование на экране */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  grid-template-rows: repeat(6, auto); /* 6 строк */
+  gap: 20px; /* Отступ между элементами */
+  justify-content: center; /* Центрирование элементов по горизонтали */
+}
+/* Стили для категорий меню */
+.menu-category {
+  background-color: #ff6600;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+/* Стили для элементов меню */
+.menu-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff6600;
+  font-size: 18px;
+}
+
+/* Стили для изображений в элементах меню */
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
